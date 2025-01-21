@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+  <script>
+    //Correct usage of insertAdjacentHTML
+    const myDiv = document.getElementById("myDiv");
+    const newParagraph = document.createElement("p");
+    newParagraph.textContent = "This is a paragraph.";
+    myDiv.appendChild(newParagraph);
+
+    // Alternative using insertAdjacentHTML which is safer and more efficient
+    // myDiv.insertAdjacentHTML('beforeend', '<p>This is a paragraph using insertAdjacentHTML.</p>');
+  </script>
+</body>
+</html>
