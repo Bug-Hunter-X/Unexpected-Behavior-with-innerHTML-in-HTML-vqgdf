@@ -1,0 +1,1 @@
+This repository demonstrates an uncommon HTML bug related to the use of innerHTML. The bug involves appending new content to the existing content of an element using innerHTML, which can lead to unexpected results, especially when dealing with complex HTML structures or user-generated content.  The solution shows a more robust approach for adding content to an HTML element.
